@@ -38,7 +38,7 @@ sv.get('/about', (req,res)=>{
 	// res.send(JSON.stringify(about));
 	res.render('about', {
 		title: 'About',
-		msg: 'about content'
+		msg: 'About content'
 	});
 })
 sv.get('/help', (req,res)=>{
@@ -46,7 +46,7 @@ sv.get('/help', (req,res)=>{
 	// res.send('<h2>Weather</h2>');
 	res.render('help', {
 		title: 'Help',
-		helpText: 'Ayudaaaa'
+		helpText: 'Help section'
 	});
 })
 sv.get('/help/*', (req,res)=>{
