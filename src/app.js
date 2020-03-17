@@ -79,7 +79,7 @@ sv.get('*', (req,res)=>{
 	});
 })
 
-sv.listen(3000 || process.env.PORT, ()=>console.log('Running'))
+sv.listen(process.env.PORT || 3000, ()=>console.log('Running'))
 
 // command
 //  API_WEATHER_KEY=d21c0a9cfe39110646e124c6466b99b8 API_GEO_KEY=pk.eyJ1IjoiYW5kaWNodWxvIiwiYSI6ImNrN3VnbTVoZDBqNDIzZW8zc2YwZXVoMWcifQ.EK7UnDiHhbk3Zi1y_Ur5og node app.js
