@@ -9,7 +9,6 @@ const getGeolocation = (location, callback, res) => {
 	.then(response=>response.json())
 	.then(data=>{
 		if(data.message || data.features.length===0){
-			console.log(data)
 			return res.json({error:'Error, no se pudo obtener localización'});
 		} else if(data.features.length===1){
 			// data -> center: [longitude,latitude]

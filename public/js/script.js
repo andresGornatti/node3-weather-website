@@ -12,8 +12,6 @@ const askWeather = (e) => {
 			}
 			const {pronostico,location, placeName} = data; 
 			feedbackP.innerHTML=`${placeName}<br>${pronostico}`;
-			console.log(placeName);
-			console.log(pronostico)
 		})
 		.catch(err=>console.log('Error al conectar con el servidor.'))
 	}
